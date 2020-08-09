@@ -58,10 +58,11 @@ function removeAllInnerDivs() {
 
 
 function changeSquares() {
-    let newAmountOfSquares = prompt('How many squares in one row do you want (max128)? ');
-    if (newAmountOfSquares > 0 && newAmountOfSquares < 129) {
+    let newAmountOfSquares = prompt('How many squares in one row do you want (max100)? ');
+    if (newAmountOfSquares > 0 && newAmountOfSquares < 100) {
         removeAllInnerDivs();
         createDivs(newAmountOfSquares);
+        clearGrid();
     } else
         alert('That was not a number between 1 and 128');
 }
@@ -83,6 +84,7 @@ function test(e) {
 
 containerDiv.addEventListener('mouseover', changeWhenHoverOver);
 window.addEventListener('load', createDivs(16));
+window.addEventListener('load', clearGrid);
 document.querySelector('#clearBtn').addEventListener('click', clearGrid);
 document.querySelector('#changeSquaresBtn').addEventListener('click', changeSquares)
 document.querySelector('#colorFullBtn').addEventListener('click', changeToColors);

@@ -3,7 +3,8 @@
   margin: 0;
   /* line-height: 1.6em; */
   box-sizing: border-box;
-  
+  background-color: #82A3A1;  
+  font-family: 'Lato', sans-serif;
 }
 
 
@@ -16,8 +17,36 @@ main{
 
 h1 {
     text-align: center;
+    font-size: 50px;
+    color: #011936;
 }
 
 #containerDiv{
+  margin-top: 25px;
   line-height: 0em !important; 
+}
+
+#buttonBar{
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+button{
+  width: 120px;
+  height: 30px;
+  background-color: #c0dfa1;
+  border:#011936 1px solid;
+  color: #011936;
+  border-radius: 5%;
+  outline: none;
+}
+
+button:hover{
+  width: 120px;
+  height: 30px;
+  background-color:#011936;
+  border:#9fc490 1px solid;
+  color: #c0dfa1;
+  border-radius: 5%;
 }
