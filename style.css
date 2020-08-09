@@ -1,0 +1,23 @@
+* {
+  padding: 0; 
+  margin: 0;
+  /* line-height: 1.6em; */
+  box-sizing: border-box;
+  
+}
+
+
+
+main{
+    width: 660px;
+    /* background-color: aqua; */
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+#containerDiv{
+  line-height: 0em !important; 
+}
