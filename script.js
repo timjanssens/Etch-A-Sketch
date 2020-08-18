@@ -58,13 +58,13 @@ function removeAllInnerDivs() {
 
 
 function changeSquares() {
-    let newAmountOfSquares = prompt('How many squares in one row do you want (max100)? ');
-    if (newAmountOfSquares > 0 && newAmountOfSquares < 100) {
+    let newAmountOfSquares = prompt('How many squares do you want in one row (max100)? ');
+    if (newAmountOfSquares > 0 && newAmountOfSquares < 101) {
         removeAllInnerDivs();
         createDivs(newAmountOfSquares);
         clearGrid();
     } else
-        alert('That was not a number between 1 and 128');
+        alert('That was not a number between 1 and 100');
 }
 
 function changeToColors() {
