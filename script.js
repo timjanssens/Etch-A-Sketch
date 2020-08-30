@@ -1,4 +1,5 @@
 let changeColor = false;
+
 //functions
 function createDivs(totalDivsPerRow) {
     for (let i = 0; i < totalDivsPerRow; i++) {
@@ -21,8 +22,6 @@ function createDivs(totalDivsPerRow) {
             divRow.appendChild(divEl);
         }
 
-
-
         let containerDiv = document.querySelector('#containerDiv');
         containerDiv.appendChild(divRow);
     }
@@ -33,6 +32,7 @@ function changeWhenHoverOver(e) {
     if (!changeColor) {
         e.target.style.backgroundColor = 'black';
     } else {
+        // randomizer for backgroundcolor of divs
         let randomR = Math.floor(Math.random() * 257);
         let randomG = Math.floor(Math.random() * 257);
         let randomB = Math.floor(Math.random() * 257);
@@ -75,10 +75,7 @@ function changeToBW() {
     changeColor = false;
 }
 
-function test(e) {
-    e.preventDefault();
-    console.log(12);
-}
+
 
 //event handlers
 
